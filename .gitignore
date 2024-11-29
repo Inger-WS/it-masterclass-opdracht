@@ -1,1 +1,6 @@
 # add stuff to ignore?
+
+.gitignore
+
+.terraform
+.terraform.lock.hcl
