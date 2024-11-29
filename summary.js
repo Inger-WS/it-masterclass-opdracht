@@ -31,3 +31,21 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+document.getElementById('confirmButton').addEventListener('click', function() {
+    fetch('https://jouw-backend-endpoint', {
+        method: 'POST',
+        body: JSON.stringify(summaryData),
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    }).then(response => {
+        if (response.ok) {
+            window.location.href = 'verzendbevestiging.html'; // Navigatie naar de bedankpagina
+        } else {
+            alert('Er is een fout opgetreden bij het verzenden.');
+        }
+    }).catch(error => {
+        alert('Er is een fout opgetreden: ' + error.message);
+    });
+});

@@ -10,13 +10,13 @@
     <div class="container" id="formContainer">
         <h1>Game Feedback Formulier</h1>
         <form id="feedbackForm">
-            <label for="name">Naam (verplicht):</label>
+            <label for="name">Naam*:</label>
             <input type="text" id="name" name="name" required>
 
-            <label for="email">Emailadres (verplicht):</label>
+            <label for="email">Emailadres*:</label>
             <input type="email" id="email" name="email" required>
 
-            <label for="phone">Telefoonnummer (verplicht):</label>
+            <label for="phone">Telefoonnummer*:</label>
             <input type="tel" id="phone" name="phone" required>
 
             <label for="rating">Beoordeel de game (1-5 sterren):</label>
@@ -28,13 +28,13 @@
                 <input type="radio" id="star1" name="rating" value="1"><label for="star1" class="star">&#9733;</label>
             </div>
 
-            <label for="bugs">Bugs (optioneel):</label>
+            <label for="bugs">Welke bugs ben je tegengekomen? (optioneel)</label>
             <textarea id="bugs" name="bugs"></textarea>
 
             <label for="experience">Ervaring met de game (optioneel):</label>
             <textarea id="experience" name="experience"></textarea>
 
-            <label for="genres">Selecteer genres (meerdere selecties mogelijk):</label>
+            <label for="genres">Welke genres speel je het liefst? (meerdere selecties mogelijk)</label>
             <div class="checkbox-group">
                 <label><input type="checkbox" name="genres" value="action"> Actie</label>
                 <label><input type="checkbox" name="genres" value="adventure"> Avontuur</label>
