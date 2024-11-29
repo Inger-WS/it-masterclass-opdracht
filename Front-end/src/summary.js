@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }).then(response => {
             if (response.ok) {
-                window.location.href = 'thankyou.html';
+                window.location.href = 'verzendbevestiging.html';
             } else {
                 alert('Er is een fout opgetreden bij het verzenden.');
             }

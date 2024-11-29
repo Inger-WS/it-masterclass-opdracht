@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
         star.addEventListener('click', function() {
             stars.forEach((s, i) => {
                 if (i <= index) {
-                    s.style.color = '#ffcc00';
+                    s.style.color = '#dd1382';
                     s.previousElementSibling.checked = true;
                 } else {
                     s.style.color = '#ccc';
