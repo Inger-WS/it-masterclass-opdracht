@@ -1,4 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
+    if (localStorage.getItem('loggedIn') !== 'true') {
+        window.location.href = 'login.html';
+        return;
+    }
+
     const summaryData = JSON.parse(localStorage.getItem('summaryData'));
     const summary = document.getElementById('summary');
 
@@ -22,30 +27,12 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }).then(response => {
             if (response.ok) {
-                alert('Formulier succesvol verzonden!');
+                window.location.href = 'thankyou.html';
             } else {
                 alert('Er is een fout opgetreden bij het verzenden.');
             }
         }).catch(error => {
             alert('Er is een fout opgetreden: ' + error.message);
         });
-    });
-});
-
-document.getElementById('confirmButton').addEventListener('click', function() {
-    fetch('https://jouw-backend-endpoint', {
-        method: 'POST',
-        body: JSON.stringify(summaryData),
-        headers: {
-            'Content-Type': 'application/json'
-        }
-    }).then(response => {
-        if (response.ok) {
-            window.location.href = 'verzendbevestiging.html'; // Navigatie naar de bedankpagina
-        } else {
-            alert('Er is een fout opgetreden bij het verzenden.');
-        }
-    }).catch(error => {
-        alert('Er is een fout opgetreden: ' + error.message);
     });
 });
