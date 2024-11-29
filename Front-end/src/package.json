@@ -1,0 +1,27 @@
+{
+    "name": "web-applicatie",
+    "version": "1.0.0",
+    "main": "index.html",
+    "scripts": {
+        "test": "jest"
+    },
+    "jest": {
+        "testEnvironment": "jsdom",
+        "setupFilesAfterEnv": ["<rootDir>/jest.setup.js"]
+    },
+    "dependencies": {
+        "@cucumber/cucumber": "^7.0.0",
+        "chai": "^4.3.4",
+        "jest-environment-jsdom": "^29.7.0",
+        "selenium-webdriver": "^4.0.0",
+        "text-encoding": "^0.7.0"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "description": "",
+    "devDependencies": {
+        "jest": "^29.7.0",
+        "jsdom": "^25.0.1"
+    }
+}

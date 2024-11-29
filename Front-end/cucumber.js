@@ -10,7 +10,7 @@ module.exports =
       format: 
       [
         'progress', // Geeft een eenvoudige voortgangsuitvoer weer
-        'reports/cucumber_report.json' // Genereert een JSON-rapport
+        'json:reports/cucumber_report.json' // Genereert een JSON-rapport
       ],
 
       paths: 
