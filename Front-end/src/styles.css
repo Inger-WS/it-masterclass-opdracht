@@ -82,3 +82,20 @@ button:hover {
     display: flex;
     flex-direction: column;
 }
+
+.bttn {
+    display: grid;
+}
+
+#summary li {
+    background-color: #f9f9f9;
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+}
