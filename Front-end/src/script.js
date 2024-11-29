@@ -32,3 +32,6 @@ document.addEventListener('DOMContentLoaded', function() {
         window.location.href = 'summary.html';
     }
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const backgroundMusic = document.getElementById('bgmusic')});
