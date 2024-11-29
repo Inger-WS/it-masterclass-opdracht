@@ -8,6 +8,7 @@ const corsOptions = {
     methods: ['GET', 'POST'], // Specifieke HTTP-methoden toestaan
     allowedHeaders: ['Content-Type', 'Authorization'], // Specifieke headers toestaan
 };
+
 app.use(cors());
     
 app.use(express.json());
@@ -18,9 +19,10 @@ app.get('/', (req, res) => {
 
 // add backend endpoint
 app.post('/submit', (req, res) => {
-    const { name } = req.body;
-    console.log(`Received name: ${ name }`);
-    res.json({ message: `Hello, ${ name }!` });
+    const { name, email, phone, rating, bugs, experience, genres } = req.body;
+    //console.log(`Received name: ${name}`);
+    console.log(`Recieved Data: name: ${ name }, email: ${ email }, phone: ${ phone }, rating: ${ rating}, bugs: ${ bugs }, experience: ${ experience }, genres: ${ genres }`);
+    res.json({ message: `Hello, ${name}! mail: ${email}, tel: ${phone}, rating: ${rating}, bugs: ${bugs}, exp: ${experience}, genre: ${genres}` });
 });
 
 app.listen(port, () => {
