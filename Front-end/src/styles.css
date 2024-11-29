@@ -23,6 +23,10 @@ body {
     opacity: 1.0;
 }
 
+.kaas {
+    text-align: center;
+}
+
 h1 {
     text-align: center;
     color: #333;
@@ -99,4 +103,8 @@ button:hover {
 .button-group {
     display: flex;
     justify-content: space-between;
+}
+
+.container-bevestiging {
+    text-align:justify;
 }
