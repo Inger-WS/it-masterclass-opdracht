@@ -21,13 +21,13 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('confirmButton').addEventListener('click', function() {
         fetch('https://jouw-backend-endpoint', {
             method: 'POST',
-            body: JSON.stringify(summaryData),
+            body: summaryData,
             headers: {
                 'Content-Type': 'application/json'
             }
         }).then(response => {
             if (response.ok) {
-                window.location.href = 'thankyou.html';
+                window.location.href = 'verzendbevestiging.html';
             } else {
                 alert('Er is een fout opgetreden bij het verzenden.');
             }

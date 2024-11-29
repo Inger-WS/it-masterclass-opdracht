@@ -6,13 +6,29 @@ body {
     padding: 0;
 }
 
+body {
+    background-image: url(BG\ panda.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 .container {
     max-width: 600px;
     margin: 50px auto;
-    padding: 20px;
-    background-color: #fff;
+    padding: 20px 200px 100px 200px;
+    background-color: #d9ea16;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
+    opacity: 1.0;
+}
+
+.kaas {
+    text-align: center;
+}
+
+.cutepanda {
+    align-content: center;
 }
 
 h1 {
@@ -51,7 +67,7 @@ input[type="radio"] {
 }
 
 input[type="radio"]:checked ~ .star {
-    color: #ffcc00;
+    color: #dd1382;
 }
 
 button {
@@ -73,4 +89,26 @@ button:hover {
 .checkbox-group {
     display: flex;
     flex-direction: column;
+}
+
+.bttn {
+    display: grid;
+}
+
+#summary li {
+    background-color: #f9f9f9;
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    list-style-type: none;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-bevestiging {
+    text-align:justify;
 }
