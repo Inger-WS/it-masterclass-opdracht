@@ -10,31 +10,31 @@
     <div class="container" id="formContainer">
         <h1>Game Feedback Formulier</h1>
         <form id="feedbackForm">
-            <label for="name">Naam*:</label>
+            <label for="name">Naam (verplicht):</label>
             <input type="text" id="name" name="name" required>
 
-            <label for="email">Emailadres*:</label>
+            <label for="email">Emailadres (verplicht):</label>
             <input type="email" id="email" name="email" required>
 
-            <label for="phone">Telefoonnummer*:</label>
+            <label for="phone">Telefoonnummer (verplicht):</label>
             <input type="tel" id="phone" name="phone" required>
 
             <label for="rating">Beoordeel de game (1-5 sterren):</label>
             <div class="rating">
-                <input type="radio" id="star1" name="rating" value="1"><label for="star1" class="star">&#9733;</label>
-                <input type="radio" id="star2" name="rating" value="2"><label for="star2" class="star">&#9733;</label>
-                <input type="radio" id="star3" name="rating" value="3"><label for="star3" class="star">&#9733;</label>
-                <input type="radio" id="star4" name="rating" value="4"><label for="star4" class="star">&#9733;</label>
                 <input type="radio" id="star5" name="rating" value="5"><label for="star5" class="star">&#9733;</label>
+                <input type="radio" id="star4" name="rating" value="4"><label for="star4" class="star">&#9733;</label>
+                <input type="radio" id="star3" name="rating" value="3"><label for="star3" class="star">&#9733;</label>
+                <input type="radio" id="star2" name="rating" value="2"><label for="star2" class="star">&#9733;</label>
+                <input type="radio" id="star1" name="rating" value="1"><label for="star1" class="star">&#9733;</label>
             </div>
 
-            <label for="bugs">Welke bugs ben je tegen gekomen? (optioneel):</label>
+            <label for="bugs">Bugs (optioneel):</label>
             <textarea id="bugs" name="bugs"></textarea>
 
-            <label for="experience">Wat zijn jouw ervaringen met de game? (optioneel):</label>
+            <label for="experience">Ervaring met de game (optioneel):</label>
             <textarea id="experience" name="experience"></textarea>
 
-            <label for="genres">Welke genres games speel je normaal gesproken? (meerdere selecties mogelijk)</label>
+            <label for="genres">Selecteer genres (meerdere selecties mogelijk):</label>
             <div class="checkbox-group">
                 <label><input type="checkbox" name="genres" value="action"> Actie</label>
                 <label><input type="checkbox" name="genres" value="adventure"> Avontuur</label>
@@ -46,14 +46,6 @@
             <button type="submit">Verzenden</button>
         </form>
     </div>
-
-    <div class="container" id="summaryContainer" style="display: none;">
-        <h1>Overzicht van Ingevulde Gegevens</h1>
-        <div id="summary"></div>
-        <button id="editButton">Terug</button>
-        <button id="confirmButton">Definitief Verzenden</button>
-    </div>
-
-    <script src="scripts.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
